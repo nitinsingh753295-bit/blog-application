@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogSpace - Create Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        Blog<span>Space</span>
+    </a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="create-blog.html" class="active">Create Blog</a>
+    </nav>
+
+    <div class="nav-buttons">
+        <a href="dashboard.html" class="btn btn-outline">
+            Cancel
+        </a>
+    </div>
+
+</header>
+
+
+<main class="create-container">
+
+    <div class="create-header">
+
+        <div>
+            <span class="section-label">NEW STORY</span>
+            <h1>Create a Blog</h1>
+            <p>Turn your ideas into something worth reading.</p>
+        </div>
+
+    </div>
+
+
+    <form id="blogForm" class="blog-form">
+
+        <div class="form-group">
+
+            <label for="blogTitle">
+                Blog Title
+            </label>
+
+            <input
+                type="text"
+                id="blogTitle"
+                placeholder="Give your story a great title..."
+                required
+            >
+
+        </div>
+
+
+        <div class="form-row">
+
+            <div class="form-group">
+
+                <label for="blogCategory">
+                    Category
+                </label>
+
+                <select id="blogCategory" required>
+
+                    <option value="">
+                        Select category
+                    </option>
+
+                    <option>Technology</option>
+                    <option>Lifestyle</option>
+                    <option>Travel</option>
+                    <option>Creativity</option>
+                    <option>Education</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="blogImage">
+                    Cover Image URL
+                </label>
+
+                <input
+                    type="url"
+                    id="blogImage"
+                    placeholder="https://example.com/image.jpg"
+                >
+
+            </div>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="blogContent">
+                Your Story
+            </label>
+
+            <textarea
+                id="blogContent"
+                rows="14"
+                placeholder="Start writing your story..."
+                required
+            ></textarea>
+
+            <div class="character-count">
+                <span id="characterCount">0</span> characters
+            </div>
+
+        </div>
+
+
+        <div class="editor-actions">
+
+            <button
+                type="button"
+                id="saveDraft"
+                class="btn btn-outline"
+            >
+                Save Draft
+            </button>
+
+            <button
+                type="submit"
+                class="btn btn-primary"
+            >
+                Publish Blog →
+            </button>
+
+        </div>
+
+    </form>
+
+</main>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogSpace - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">Blog<span>Space</span></a>
+
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="create-blog.html">Create Blog</a>
+    </nav>
+
+    <div class="nav-buttons">
+        <a href="login.html" class="btn btn-outline">Login</a>
+        <a href="register.html" class="btn btn-primary">Register</a>
+    </div>
+</header>
+
+<main>
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">WELCOME TO BLOGSPACE</span>
+
+            <h1>Share your ideas.<br><span>Inspire the world.</span></h1>
+
+            <p>
+                A simple and beautiful platform to write, publish,
+                and discover amazing stories from creative minds.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="create-blog.html" class="btn btn-primary">
+                    Start Writing →
+                </a>
+
+                <a href="#blogs" class="btn btn-light">
+                    Explore Blogs
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-card">
+            <div class="hero-card-top">
+                <span>Featured Story</span>
+                <span>•••</span>
+            </div>
+
+            <h2>The Art of<br>Creative Thinking</h2>
+
+            <p>
+                Discover how curiosity and creativity can
+                transform the way you see everyday life.
+            </p>
+
+            <div class="author">
+                <div class="avatar">AS</div>
+                <div>
+                    <strong>Alex Smith</strong>
+                    <small>5 min read</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="blogs-section" id="blogs">
+
+        <div class="section-heading">
+            <div>
+                <span class="section-label">DISCOVER</span>
+                <h2>Latest Stories</h2>
+            </div>
+
+            <input
+                type="text"
+                id="searchInput"
+                class="search-box"
+                placeholder="Search blogs..."
+                
+            >
+           
+            <select id="categoryFilter" aria-label="Filter by category">
+            <option value="">All Categories</option>
+            </select>
+
+            <div id="blogGrid"></div>
+
+        </div>
+
+
+        <div class="blog-grid" id="blogGrid">
+
+            <article class="blog-card">
+                <div class="blog-image image-one">💻</div>
+
+                <div class="blog-content">
+                    <span class="category">TECHNOLOGY</span>
+
+                    <h3>The Future of Web Development</h3>
+
+                    <p>
+                        Explore the technologies shaping the
+                        future of modern websites and applications.
+                    </p>
+
+                    <div class="blog-meta">
+                        <span>John Doe</span>
+                        <span>6 min read</span>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="blog-card">
+                <div class="blog-image image-two">🌱</div>
+
+                <div class="blog-content">
+                    <span class="category">LIFESTYLE</span>
+
+                    <h3>Small Habits, Big Changes</h3>
+
+                    <p>
+                        Simple daily habits can create meaningful
+                        changes in your personal and professional life.
+                    </p>
+
+                    <div class="blog-meta">
+                        <span>Sarah Lee</span>
+                        <span>4 min read</span>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="blog-card">
+                <div class="blog-image image-three">📸</div>
+
+                <div class="blog-content">
+                    <span class="category">CREATIVITY</span>
+
+                    <h3>Finding Inspiration Everywhere</h3>
+
+                    <p>
+                        Learn how to find inspiration in ordinary
+                        moments and turn ideas into creative work.
+                    </p>
+
+                    <div class="blog-meta">
+                        <span>Mike Chen</span>
+                        <span>7 min read</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <div class="footer-content">
+        <div>
+            <a href="index.html" class="logo">Blog<span>Space</span></a>
+            <p>Write. Share. Inspire.</p>
+        </div>
+
+        <p>© 2026 BlogSpace. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogSpace - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        Blog<span>Space</span>
+    </a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="create-blog.html">Create Blog</a>
+    </nav>
+
+    <div class="user-menu">
+        <div class="avatar">JD</div>
+        <span>John Doe</span>
+    </div>
+
+</header>
+
+
+<main class="dashboard">
+
+    <div class="dashboard-header">
+
+        <div>
+            <span class="section-label">YOUR SPACE</span>
+            <h1>Dashboard</h1>
+            <p>Manage your stories and track your writing.</p>
+        </div>
+
+        <a href="create-blog.html" class="btn btn-primary">
+            + Create Blog
+        </a>
+
+    </div>
+
+
+    <div class="stats-grid">
+
+        <div class="stat-card">
+            <span class="stat-icon">📝</span>
+            <div>
+                <span>Total Posts</span>
+                <strong>12</strong>
+            </div>
+        </div>
+
+
+        <div class="stat-card">
+            <span class="stat-icon">👁</span>
+            <div>
+                <span>Total Views</span>
+                <strong>2,840</strong>
+            </div>
+        </div>
+
+
+        <div class="stat-card">
+            <span class="stat-icon">♡</span>
+            <div>
+                <span>Total Likes</span>
+                <strong>486</strong>
+            </div>
+        </div>
+
+
+        <div class="stat-card">
+            <span class="stat-icon">💬</span>
+            <div>
+                <span>Comments</span>
+                <strong>128</strong>
+            </div>
+        </div>
+
+    </div>
+
+
+    <section class="dashboard-posts">
+
+        <div class="section-heading">
+            <div>
+                <span class="section-label">CONTENT</span>
+                <h2>Your Posts</h2>
+            </div>
+
+            <select id="postFilter">
+                <option value="all">All Posts</option>
+                <option value="published">Published</option>
+                <option value="draft">Drafts</option>
+            </select>
+        </div>
+
+
+        <div class="post-table">
+
+            <div class="table-header">
+                <span>POST</span>
+                <span>STATUS</span>
+                <span>VIEWS</span>
+                <span>ACTION</span>
+            </div>
+
+
+            <div class="table-row">
+
+                <div class="post-title">
+                    <div class="mini-image">💻</div>
+                    <div>
+                        <strong>The Future of Web Development</strong>
+                        <small>Technology · Sep 24, 2026</small>
+                    </div>
+                </div>
+
+                <span class="status published">Published</span>
+
+                <span>842</span>
+
+                <button class="delete-btn">Delete</button>
+
+            </div>
+
+
+            <div class="table-row">
+
+                <div class="post-title">
+                    <div class="mini-image">🌱</div>
+                    <div>
+                        <strong>Small Habits, Big Changes</strong>
+                        <small>Lifestyle · Sep 20, 2026</small>
+                    </div>
+                </div>
+
+                <span class="status published">Published</span>
+
+                <span>621</span>
+
+                <button class="delete-btn">Delete</button>
+
+            </div>
+
+
+            <div class="table-row">
+
+                <div class="post-title">
+                    <div class="mini-image">💡</div>
+                    <div>
+                        <strong>Ideas Worth Sharing</strong>
+                        <small>Creativity · Draft</small>
+                    </div>
+                </div>
+
+                <span class="status draft">Draft</span>
+
+                <span>—</span>
+
+                <button class="delete-btn">Delete</button>
+
+            </div>
+
+        </div>
+
+    </section>
+    
+    <section class="profile-card">
+        <h2>My Profile</h2>
+        <p>Name: <span id="profileName">Loading...</span></p>
+        <p>Email: <span id="profileEmail">Loading...</span></p>
+        <button id="logoutBtn" type="button">Logout</button>
+    </section>
+
+    <section class="my-blogs-section">
+        <h2>My Blogs</h2>
+        <a href="create-blog.html">Create New Blog</a>
+        <div id="myBlogsGrid"></div>
+        <p id="myBlogsMessage" role="status"></p>
+    </section>
+
+
+
+</main>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
